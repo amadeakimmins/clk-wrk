@@ -1,7 +1,7 @@
 const router = require('express').Router();
+const auth = require('../controllers/auth');
 const events = require('../controllers/events');
 const apparel = require('../controllers/apparels');
-const auth = require('../controllers/auth');
 // const users = require('../controllers/users');
 
 router.route('/events')
