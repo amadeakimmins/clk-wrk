@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 import Navbar from './components/utility/Navbar';
+import AuthenticationRoutes from './components/auth/AuthenticationRoutes';
+
 
 // import 'bootstrap-css-only';
 // import 'font-awesome/css/font-awesome.css';
@@ -19,8 +21,8 @@ class App extends React.Component {
             <h1>CLK:WRK</h1>
           </header>
           <main>
-            {/* <AuthenticationRoutes />
-            <EventsRoutes /> */}
+            <AuthenticationRoutes />
+            {/* <EventsRoutes /> */}
             <h1>Hello</h1>
           </main>
         </div>
