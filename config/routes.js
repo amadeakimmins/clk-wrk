@@ -1,4 +1,8 @@
 const router = require('express').Router();
+const events = require('../controllers/events');
+const apparel = require('../controllers/apparels');
+const auth = require('../controllers/auth');
+// const users = require('../controllers/users');
 
 router.route('/events')
   .get(events.index);
@@ -12,7 +16,7 @@ router.route('/apparel')
   .get(apparel.index);
 router.route('/apparel/:id')
   .get(events.show);
-  
+
   // authentication
 router.route('/register')
   .post(auth.register);

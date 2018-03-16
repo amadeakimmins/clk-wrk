@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema({
   username: { type: String, required: 'username required' },
   email: { type: String, required: 'A valid email address is required', uniqueness: true },
   password: { type: String, required: 'password required' },
-  admin: { true }
+  // admin: { true }
 }, {toObject: { virtuals: true }});
 
 
