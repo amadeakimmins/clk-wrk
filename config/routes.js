@@ -8,6 +8,11 @@ router.route('/events/:id')
   // .put(secureRoute, events.update)
   // .delete(secureRoute, events.delete)
 
+router.route('/apparel')
+  .get(apparel.index);
+router.route('/apparel/:id')
+  .get(events.show);
+  
   // authentication
 router.route('/register')
   .post(auth.register);
