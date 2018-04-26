@@ -13,17 +13,19 @@ const Navbar = ({ history }) => {
   return (
     <div className="container">
       <nav className="navbar">
-        <Link to="/" className="navbar-item"><i className="fa fa-home"></i> Home</Link>
+        <Link to="/" className="navbar-item">Home</Link>
         {' '}
-        <Link to="/events" className="navbar-item"><i className="fa fa-shopping-bag"></i> Events</Link>
+        <Link to="/events" className="navbar-item">Events</Link>
         {' '}
-        { !!Auth.isAuthenticated() && <Link to="/apparel" className="navbar-item"><i className="fa fa-user"></i> Apparel</Link>}
+        { !!Auth.isAuthenticated() && <Link to="/apparel" className="navbar-item">Apparel</Link>}
         {' '}
-        {!Auth.isAuthenticated() && <Link to="/login" className="navbar-item"><i className="fa fa-sign-in"></i> Login</Link>}
+        {/* <h1>CLK:WRK</h1> */}
         {' '}
-        { !Auth.isAuthenticated() && <Link to="/register" className="navbar-item"><i className="fa fa-edit"></i> Register</Link>}
+        {!Auth.isAuthenticated() && <Link to="/login" className="navbar-item">Login</Link>}
         {' '}
-        { !!Auth.isAuthenticated() && <a href="#" className="navbar-item" onClick={logout}><i className="fa fa-sign-out"></i> Logout</a>}
+        { !Auth.isAuthenticated() && <Link to="/register" className="navbar-item">Register</Link>}
+        {' '}
+        { !!Auth.isAuthenticated() && <a href="#" className="navbar-item" onClick={logout}>Logout</a>}
       </nav>
     </div>
   );

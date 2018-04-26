@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 import Navbar from './components/utility/Navbar';
 import AuthenticationRoutes from './components/auth/AuthenticationRoutes';
+import EventsRoutes from './components/events/EventsRoutes';
 
 
 // import 'bootstrap-css-only';
@@ -22,7 +23,8 @@ class App extends React.Component {
           </header>
           <main>
             <AuthenticationRoutes />
-            {/* <EventsRoutes /> */}
+            <EventsRoutes />
+
           </main>
         </div>
       </Router>
