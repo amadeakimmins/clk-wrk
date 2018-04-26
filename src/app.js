@@ -6,7 +6,6 @@ import Navbar from './components/utility/Navbar';
 import AuthenticationRoutes from './components/auth/AuthenticationRoutes';
 import EventsRoutes from './components/events/EventsRoutes';
 
-
 // import 'bootstrap-css-only';
 // import 'font-awesome/css/font-awesome.css';
 import './scss/style.scss';
