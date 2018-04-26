@@ -23,7 +23,6 @@ class App extends React.Component {
           <main>
             <AuthenticationRoutes />
             {/* <EventsRoutes /> */}
-            <h1>Hello</h1>
           </main>
         </div>
       </Router>

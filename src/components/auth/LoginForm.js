@@ -2,10 +2,13 @@ import React from 'react';
 
 import { FormGroup, FormControl, ControlLabel } from 'react-bootstrap';
 
+import BackButton from '../utility/BackButton';
+
 const LoginForm = ({ handleChange, handleSubmit, user, errors }) => {
   return (
     <form onSubmit={handleSubmit} className="authentication-container">
       <FormGroup>
+        <BackButton history={ history } />
         <ControlLabel htmlFor="email">Email</ControlLabel>
         <FormControl
           name="email"
