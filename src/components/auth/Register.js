@@ -37,13 +37,12 @@ class Register extends React.Component {
 
   render() {
     return (
-      <h1>register</h1>
-      // <RegisterForm
-      //   user={this.state.user}
-      //   handleChange={this.handleChange}
-      //   handleSubmit={this.handleSubmit}
-      //   errors={this.state.errors}
-      // />
+      <RegisterForm
+        user={this.state.user}
+        handleChange={this.handleChange}
+        handleSubmit={this.handleSubmit}
+        errors={this.state.errors}
+      />
     );
   }
 }
