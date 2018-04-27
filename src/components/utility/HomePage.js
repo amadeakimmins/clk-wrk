@@ -1,11 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import { Jumbotron} from 'react-bootstrap';
+
 const HomePage = () => {
   return (
-    <div>
-      <h1>CLK:WRK HOMEPAGE</h1>
+    <Jumbotron className="jumbotron">
+    <div className="jumbotron-container">
+      <p className="jumbotron-text">CLK : WRK</p>
     </div>
+  </Jumbotron>
 
 
   );
